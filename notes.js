@@ -42,4 +42,20 @@ const noteAboutToday = {
 }
 
 notes.push(noteAboutToday)
-console.log(notes)
+
+for (const note of notes) {
+console.log(`Note ${note.id}
+Subject is ${note.subject}
+Date is ${note.date}
+-----------------
+`)
+}
+const searchTerm = "Mindful"
+
+for (const note of notes) {
+    if (note.feeling === searchTerm) {
+console.log(note)
+    }
+}
+
+// console.log(notes)
